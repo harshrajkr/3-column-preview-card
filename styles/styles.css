@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+a {
+  font-size: 0.9375rem;
+  border: 1px solid #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+a:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  background-color: #f2f2f2;
+  padding: 0.9375rem 2rem;
+  border-radius: 1.5625rem;
+}
+
+.btn-sedan {
+  color: #e38826;
+}
+
+.btn-suv {
+  color: #006970;
+}
+
+.btn-luxury {
+  color: #004241;
+}
+
+.card {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 19.0625rem;
+  height: 31.125rem;
+  padding: 2.8125rem;
+}
+
+.card h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin: 2.5rem 0;
+  font-weight: 700;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  word-spacing: 0.0625rem;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  padding-bottom: 6vw;
+}
+
+.card-sedan {
+  background-color: #e38826;
+  border-radius: 0.3125rem 0 0 0.3125rem;
+}
+
+.card-suv {
+  background-color: #006970;
+}
+
+.card-luxury {
+  background-color: #004241;
+  border-radius: 0 0.3125rem 0.3125rem 0;
+}
+
+@media (max-width: 23.4375em) {
+  .container {
+    margin: 5.625rem 1.5625rem;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    margin: 0;
+    width: auto;
+    height: 27.5rem;
+    padding: 2.8125rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-sedan {
+    border-radius: 0.3125rem 0.3125rem 0 0;
+  }
+  .card-luxury {
+    border-radius: 0 0 0.3125rem 0.3125rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

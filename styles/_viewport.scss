@@ -1,0 +1,21 @@
+@media (max-width:23.4375em) {
+    .container{
+        margin: 5.625rem 1.5625rem;//90px and 25px
+        height: auto;
+        flex-direction: column;
+    }
+    .card{
+        margin: 0;
+        width: auto;
+        height: 27.5rem;//440px
+        padding: 2.8125rem;//45px
+        flex-wrap:wrap;
+
+        &-sedan{
+            border-radius: 0.3125rem 0.3125rem 0 0;
+        }
+        &-luxury{
+            border-radius: 0 0 0.3125rem 0.3125rem;
+        }
+    }
+}

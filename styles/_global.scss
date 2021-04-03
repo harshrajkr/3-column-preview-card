@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    background-color: $veryLightGray;
+}
+a,a:hover,a:active,a:focus{
+    text-decoration: none;
+}
+a{
+    font-size: $font-Regular;
+    border: 1px solid $veryLightGray;
+    font-family: $family-1;
+    font-weight: $weight-1;
+    &:hover{
+        background-color: transparent;
+        color: $transparentWhite;
+        transition: background-color .2s ease-in-out;
+    }
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: $veryLightGray;
+    padding: 0.9375rem 2rem;//15px 32px;
+    border-radius: 1.5625rem;//25px;
+    &-sedan{
+        color: $brightOrange;
+    }
+    &-suv{
+        color: $darkCyan;
+    }
+    &-luxury{
+        color: $veryDarkCyan;
+    }
+}
+
+
